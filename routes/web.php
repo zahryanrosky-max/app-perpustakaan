@@ -14,11 +14,12 @@ Route::get('/', function () {
 Route::resource('books', BookController::class);
 Route::resource('categories', CategoryController::class)->except(['show']);
 Route::resource('members', MemberController::class);
-Route::resource('loans', LoanController::class);
 
-// Custom route pengembalian buku
-Route::put('/loans/{id}/kembalikan', [LoanController::class, 'kembalikan'])
+// Custom route pengembalian buku (ditaruh sebelum resource loans)
+Route::match(['put', 'patch'], '/loans/{id}/kembalikan', [LoanController::class, 'kembalikan'])
     ->name('loans.kembalikan');
+
+Route::resource('loans', LoanController::class);
 
 // Route group admin
 Route::prefix('admin')->group(function () {

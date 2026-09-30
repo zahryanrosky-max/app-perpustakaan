@@ -23,6 +23,12 @@
         .text-danger { color: #dc2626; font-size: 13px; margin-top: 4px; }
         form.inline { display: inline; }
         footer { text-align: center; padding: 20px; color: #6b7280; font-size: 14px; border-top: 1px solid #e5e7eb; margin-top: 40px; }
+        /* CSS Badge Status */
+        .badge { padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; display: inline-block; }
+        .badge-dipinjam { background-color: #fef08a; color: #854d0e; }
+        .badge-dikembalikan { background-color: #bbf7d0; color: #166534; }
+        .badge-terlambat { background-color: #fecaca; color: #991b1b; }
+        .inline { display: inline; }
     </style>
 </head>
 <body>
