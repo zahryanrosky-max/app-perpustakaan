@@ -11,7 +11,16 @@ class Book extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];
+    protected $fillable = [
+        'judul',
+        'penulis',
+        'penerbit',
+        'tahun_terbit',
+        'isbn',
+        'stok',
+        'sampul',
+        'category_id',
+    ];
 
     public function category(): BelongsTo
     {

@@ -10,7 +10,14 @@ class Member extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];
+    protected $fillable = [
+        'nama',
+        'nim',
+        'email',
+        'nomor_telepon',
+        'alamat',
+        'status',
+    ];
 
     public function loans(): HasMany
     {

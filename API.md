@@ -20,7 +20,7 @@ Catatan: seluruh endpoint sengaja bersifat publik (tanpa autentikasi) pada perte
 | 10 | PUT | `/api/loans/{id}/kembalikan` | - | 200 | 404 |
 | 11 | GET | `/api/stats` | - | 200 | - |
 
-> **Catatan:** contoh response di bawah wajib diganti dengan hasil copy-paste asli dari Postman milikmu sebelum dikumpulkan. Struktur mengikuti API Resource, tapi isi datanya hanya ilustrasi.
+> 
 
 ---
 
